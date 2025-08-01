@@ -10,3 +10,6 @@ Documents/*
 !Documents/
 !Documents/PowerShell/
 !Documents/PowerShell/Microsoft.PowerShell_profile.ps1
+
+# Ignore all files ending with .log
+**.log

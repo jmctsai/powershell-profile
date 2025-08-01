@@ -5,10 +5,8 @@
 !.gitignore
 !.gitconfig
 
-# Ignore everything in Documents
+# Ignore everything in Documents except the PowerShell profile file
 Documents/*
-# Unignore Documents and its subfolders
 !Documents/
 !Documents/WindowsPowerShell/
-# Unignore the PowerShell profile file
 !Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1

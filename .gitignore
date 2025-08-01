@@ -4,3 +4,11 @@
 # Includelist
 !.gitignore
 !.gitconfig
+
+# Ignore everything in Documents
+Documents/*
+# Unignore Documents and its subfolders
+!Documents/
+!Documents/WindowsPowerShell/
+# Unignore the PowerShell profile file
+!Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1

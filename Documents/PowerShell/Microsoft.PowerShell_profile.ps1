@@ -5,4 +5,4 @@ function ll { Get-ChildItem -Force | Format-Table -AutoSize }
 # Git Shortcuts
 function gst { git status }
 function gaa { git add . }
-function gp { git push }
+function gpush { git push }

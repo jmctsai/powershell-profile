@@ -97,32 +97,33 @@ else {
   }
 }
 
-# OMP Install
-try {
-  winget install -e --accept-source-agreements --accept-package-agreements JanDeDobbeleer.OhMyPosh
-}
-catch {
-  Write-Error "Failed to install Oh My Posh. Error: $_"
-}
+# # OMP Install
+# try {
+#   winget install -e --accept-source-agreements --accept-package-agreements JanDeDobbeleer.OhMyPosh
+# }
+# catch {
+#   Write-Error "Failed to install Oh My Posh. Error: $_"
+# }
 
 # Font Install
 Install-NerdFonts -FontName "JetBrainsMono" -FontDisplayName "JetBrainsMono NF"
 
 # Final check and message to the user
-if ((Test-Path -Path $PROFILE) -and (winget list --name "OhMyPosh" -e) -and ($fontFamilies -contains "CaskaydiaCove NF")) {
+# if ((Test-Path -Path $PROFILE) -and (winget list --name "OhMyPosh" -e) -and ($fontFamilies -contains "JetBrainsMono NF")) {
+if ((Test-Path -Path $PROFILE) -and ($fontFamilies -contains "JetBrainsMono NF")) {
   Write-Host "Setup completed successfully. Please restart your PowerShell session to apply changes."
 }
 else {
   Write-Warning "Setup completed with errors. Please check the error messages above."
 }
 
-# Choco install
-try {
-  Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-}
-catch {
-  Write-Error "Failed to install Chocolatey. Error: $_"
-}
+# # Choco install
+# try {
+#   Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+# }
+# catch {
+#   Write-Error "Failed to install Chocolatey. Error: $_"
+# }
 
 # Terminal Icons Install
 try {

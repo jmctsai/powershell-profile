@@ -53,7 +53,7 @@ function uptime {
 
 # Shell Aliases
 function c { Clear-Host }
-function rp { & $profile }
+function rl { & $profile }
 
 # Enhanced Listing
 function la { Get-ChildItem | Format-Table -AutoSize }

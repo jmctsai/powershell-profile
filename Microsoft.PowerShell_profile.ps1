@@ -51,16 +51,17 @@ function uptime {
   }
 }
 
-# Shell Aliases
+# Functions
+## Shell
 function rl { & $profile }
 function c { Clear-Host }
 function ag ($cmd) { Get-Alias $cmd }
 
-# Enhanced Listing
+## Enhanced Listing
 function la { Get-ChildItem | Format-Table -AutoSize }
 function ll { Get-ChildItem -Force | Format-Table -AutoSize }
 
-# Git Aliases
+## Git
 function gst { git status }
 function gaa { git add . }
 function gcom ($msg) { git commit -m "$msg" }

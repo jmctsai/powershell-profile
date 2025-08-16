@@ -24,9 +24,8 @@ After running the script, you'll have two options for installing a font patched 
 1. Run the command `oh-my-posh font install`
 2. A list of Nerd Fonts will appear like so:
 
-<pre>
+```PS
 PS> oh-my-posh font install
-
    Select font
 
   > 0xProto
@@ -39,7 +38,8 @@ PS> oh-my-posh font install
     BitstreamVeraSansMono
 
     •••••••••
-    ↑/k up • ↓/j down • q quit • ? more</pre>
+    ↑/k up • ↓/j down • q quit • ? more
+```
 
-3. With the up/down arrow keys, select the font you would like to install and press <kbd>ENTER</kbd>
-4. DONE!
+1. With the up/down arrow keys, select the font you would like to install and press `ENTER`
+2. DONE!

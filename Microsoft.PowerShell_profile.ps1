@@ -54,6 +54,7 @@ function uptime {
 # Shell Aliases
 function c { Clear-Host }
 function rl { & $profile }
+function ag ($cmd) { Get-Alias $cmd }
 
 # Enhanced Listing
 function la { Get-ChildItem | Format-Table -AutoSize }

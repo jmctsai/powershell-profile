@@ -52,8 +52,8 @@ function uptime {
 }
 
 # Shell Aliases
-function c { Clear-Host }
 function rl { & $profile }
+function c { Clear-Host }
 function ag ($cmd) { Get-Alias $cmd }
 
 # Enhanced Listing

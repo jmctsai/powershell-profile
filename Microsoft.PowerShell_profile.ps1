@@ -51,10 +51,6 @@ function uptime {
   }
 }
 
-function reload-profile {
-  & $profile
-}
-
 # Shell Aliases
 function c { Clear-Host }
 function rp { & $profile }

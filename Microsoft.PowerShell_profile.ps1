@@ -55,11 +55,15 @@ function reload-profile {
   & $profile
 }
 
+# Shell Aliases
+function c { Clear-Host }
+function rp { & $profile }
+
 # Enhanced Listing
 function la { Get-ChildItem | Format-Table -AutoSize }
 function ll { Get-ChildItem -Force | Format-Table -AutoSize }
 
-# Git Shortcuts
+# Git Aliases
 function gst { git status }
 function gaa { git add . }
 function gcom ($msg) { git commit -m "$msg" }

@@ -135,7 +135,6 @@ catch {
 # zoxide Install
 try {
   winget install -e --id ajeetdsouza.zoxide
-  Write-Host "zoxide installed successfully."
 }
 catch {
   Write-Error "Failed to install zoxide. Error: $_"

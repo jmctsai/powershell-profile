@@ -11,6 +11,11 @@ function spotx {
   iex "& { $(iwr -useb 'https://raw.githubusercontent.com/SpotX-Official/SpotX/refs/heads/main/run.ps1') } -new_theme"
 }
 
+# https://github.com/massgravel/Microsoft-Activation-Scripts
+function activate-windows {
+  irm https://get.activated.win | iex
+}
+
 # Set UNIX-like aliases for the admin command, so sudo <command> will run the command with elevated rights.
 Set-Alias -Name su -Value admin
 

@@ -6,6 +6,11 @@ function winutil {
   irm https://christitus.com/win | iex
 }
 
+# Launch SpotX Sptoify patcher: https://github.com/SpotX-Official/SpotX?tab=readme-ov-file#installation--update
+function spotx {
+  iex "& { $(iwr -useb 'https://raw.githubusercontent.com/SpotX-Official/SpotX/refs/heads/main/run.ps1') } -new_theme"
+}
+
 # Set UNIX-like aliases for the admin command, so sudo <command> will run the command with elevated rights.
 Set-Alias -Name su -Value admin
 

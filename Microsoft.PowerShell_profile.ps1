@@ -3,7 +3,12 @@ function Get-PubIP { (Invoke-WebRequest http://ifconfig.me/ip).Content }
 
 # Open WinUtil full-release
 function winutil {
-  irm https://christitus.com/win | iex
+  irm "https://christitus.com/win" | iex
+}
+
+# Open Winhance
+function winhance {
+  irm "https://get.winhance.net" | iex
 }
 
 # Launch SpotX Sptoify patcher: https://github.com/SpotX-Official/SpotX?tab=readme-ov-file#installation--update

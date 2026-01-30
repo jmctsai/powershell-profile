@@ -6,8 +6,8 @@ function winutil {
   irm "https://christitus.com/win" | iex
 }
 
-# Open Winhance
-function winhance {
+# Download Winhance
+function winhance-download {
   irm "https://get.winhance.net" | iex
 }
 

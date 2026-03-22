@@ -82,3 +82,6 @@ function gaa { git add . }
 function gcom ($msg) { git commit -m "$msg" }
 function gpush { git push }
 function gpr { git pull --rebase }
+
+# Zoxide
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
